@@ -11,5 +11,6 @@ public class Solution {
             return area;
         else
             return (int) (area-coverLength*coverHeight);
+	System.out.println("Hello World";;
     }
 }
