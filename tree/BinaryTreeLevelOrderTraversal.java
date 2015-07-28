@@ -10,7 +10,7 @@
 public class Solution {
     /*
     time: O(n)
-    space: O(n^2)
+    space: O(n)
     */
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> ret=new ArrayList<List<Integer>>();
@@ -36,6 +36,33 @@ public class Solution {
             list.add(lastNode.val);
             ret.add(list);
             queue.poll();
+        }
+        return ret;
+    }
+
+    /*
+    time: O(n)
+    space: O(n)
+    */
+    @method2
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> ret=new ArrayList<List<Integer>>();
+        if(root==null)
+            return ret;
+        Queue<TreeNode> queue=new LinkedList<TreeNode>();
+        queue.offer(root);
+        while(queue.peek()!=null){
+            List<Integer> list=new ArrayList<Integer>();
+            int size = queue.size();
+            for(int i=0;i<size;i++){
+                TreeNode node = queue.poll();
+                list.add(node.val);
+                if(node.left!=null)
+                    queue.offer(node.left);
+                if(node.right!=null)
+                    queue.offer(node.right);
+            }
+            ret.add(list);
         }
         return ret;
     }
