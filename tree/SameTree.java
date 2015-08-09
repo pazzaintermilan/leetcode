@@ -39,7 +39,7 @@ public class Solution {
     /*
     recursive
     time: O(n)
-    space: O(log n)
+    space: height of the tree
     */
     @method2
     public boolean isSameTree(TreeNode p, TreeNode q) {

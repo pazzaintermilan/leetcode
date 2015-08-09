@@ -11,7 +11,7 @@ public class Solution {
     /*
     recursive
     time: O(n)
-    space: O(n)
+    space: height of tree
     */
     @method1
     public int maxDepth(TreeNode root) {
@@ -28,7 +28,7 @@ public class Solution {
     /*
     non-recursive
     time: O(n)
-    space: O(n)
+    space: O(logn)
     */
     @method2
     public int maxDepth(TreeNode root) {
