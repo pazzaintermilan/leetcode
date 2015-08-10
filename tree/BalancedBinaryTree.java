@@ -8,23 +8,25 @@
  * }
  */
 public class Solution {
-    
-    
+    /*
+    time: O(n)
+    space: height of tree
+    */
     public boolean isBalanced(TreeNode root) {
-        if(root==null)
-            return true;
-        int leftHeight=getHeight(root.left);
-        int rightHeight=getHeight(root.right);
-        int diff=Math.abs(leftHeight-rightHeight);
-        if(diff>1)
-            return false;
-        else
-            return isBalanced(root.left)&&isBalanced(root.right);
+        return balancedHeight(root)>=0;
     }
     
-    public int getHeight(TreeNode root){
+    /*
+    return the height of root if root is a balanced tree,
+    otherwise return -1
+    */
+    public int balancedHeight(TreeNode root){
         if(root==null)
             return 0;
-        return Math.max(getHeight(root.left),getHeight(root.right))+1;
+        int left=balancedHeight(root.left);
+        int right=balancedHeight(root.right);
+        if(left<0||right<0||Math.abs(left-right)>1)
+            return -1;
+        return Math.max(left,right)+1;
     }
 }

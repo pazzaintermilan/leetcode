@@ -10,7 +10,7 @@
 public class Solution {
 	/*
 	time: O(n)
-	space: O(log n)
+	space: height of tree
 	*/
     public boolean hasPathSum(TreeNode root, int sum) {
         if(root==null)
