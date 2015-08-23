@@ -10,7 +10,7 @@ public class Solution {
     /*
     time: O(n)
     space: O(1)
-    reverse the second half and compare first hard and second harf
+    reverse the second half and compare first half and second half
     then reverse second half again the link it with first half
     */
     @method1
@@ -65,7 +65,7 @@ public class Solution {
     public boolean isPalindrome(ListNode head) {
         if(head==null||head.next==null)
             return true;
-        Stack<Integer> stk=new Stack<Integer>();
+        Stack<Integer> stk = new Stack<Integer>();
         ListNode cur=head;
         while(cur!=null){
             stk.push(cur.val);

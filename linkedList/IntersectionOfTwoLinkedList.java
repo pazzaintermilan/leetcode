@@ -13,7 +13,7 @@ public class Solution {
     /*
     time: O(n)
     space: O(1)
-    count the diff of two list length, move largets one forward diff step
+    count the diff of two list length, move largest one forward diff step
     then move two list at the same time to check whether they encounter or not
     */
     @method1
@@ -60,7 +60,6 @@ public class Solution {
         if(headA==null||headB==null)
             return null;
         ListNode cur1=headA;
-        ListNode cur2=headB;
         ListNode slow=headB,fast=headB;
         while(cur1.next!=null)
             cur1=cur1.next;

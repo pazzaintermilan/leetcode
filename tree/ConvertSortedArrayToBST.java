@@ -9,8 +9,8 @@
  */
 public class Solution {
     /*
-    time: O(n)
-    space: O(logn) or height of tree
+    time: O(nlogn)
+    space: O(logn) 
     */
     public TreeNode sortedArrayToBST(int[] nums) {
         return buildBST(nums,0,nums.length-1);

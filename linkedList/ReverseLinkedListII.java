@@ -7,6 +7,10 @@
  * }
  */
 public class Solution {
+    /*
+    time: O(n)
+    space: O(1)
+    */
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if(head==null||head.next==null)
             return head;

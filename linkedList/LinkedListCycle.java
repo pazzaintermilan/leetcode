@@ -11,8 +11,8 @@
  */
 public class Solution {
     /*
-    time: O
-    space: C
+    time: O(n)
+    space: O(1)
     */
     public boolean hasCycle(ListNode head) {
         if(head==null||head.next==null)

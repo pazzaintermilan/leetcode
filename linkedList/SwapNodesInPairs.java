@@ -7,6 +7,10 @@
  * }
  */
 public class Solution {
+    /*
+    time: O(n)
+    space: O(1)
+    */
     public ListNode swapPairs(ListNode head) {
         if(head==null||head.next==null)
             return head;

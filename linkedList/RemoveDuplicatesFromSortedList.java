@@ -8,8 +8,8 @@
  */
 public class Solution {
     /*
-    time: n
-    space: C
+    time: O(n)
+    space: O(1)
     */
     public ListNode deleteDuplicates(ListNode head) {
         if(head==null||head.next==null)

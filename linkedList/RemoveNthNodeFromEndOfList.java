@@ -7,6 +7,10 @@
  * }
  */
 public class Solution {
+    /*
+    time: O(n)
+    space: O(1)
+    */
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if(head==null||n==0)
             return head;

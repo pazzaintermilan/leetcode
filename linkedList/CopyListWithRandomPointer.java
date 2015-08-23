@@ -8,8 +8,8 @@
  */
 public class Solution {
     /*
-    time: n
-    space: C
+    time: O(n)
+    space: O(1)
     */
     public RandomListNode copyRandomList(RandomListNode head) {
         if(head==null)

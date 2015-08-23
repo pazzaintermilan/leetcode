@@ -7,6 +7,10 @@
  * }
  */
 public class Solution {
+    /*
+    time: O(m+n)
+    space: O(1)
+    */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy=new ListNode(1);
         ListNode cur=dummy;

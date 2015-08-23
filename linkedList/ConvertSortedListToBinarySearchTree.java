@@ -17,9 +17,11 @@
  */
 public class Solution {
     /*
-    time: logn
-    space: C
+    top-down
+    time: O(n^2)
+    space: O(logn)
     */
+    @method1
     public TreeNode sortedListToBST(ListNode head) {
         if(head==null)
             return null;
@@ -38,5 +40,15 @@ public class Solution {
         root.left = sortedListToBST(head);
         root.right = sortedListToBST(slow.next);
         return root;
+    }
+
+    /*
+    bottom up
+    time: O(n)
+    space: O(logn)
+    */
+    @method2
+    public TreeNode sortedListToBST(ListNode head){
+        
     }
 }

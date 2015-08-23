@@ -7,6 +7,10 @@
  * }
  */
 public class Solution {
+    /*
+    time: O(n)
+    space: O(1)
+    */
     public ListNode rotateRight(ListNode head, int k) {
         if(head==null||head.next==null||k==0)
             return head;
@@ -17,9 +21,8 @@ public class Solution {
             len++;
         }
         k=k%len;
-        for(int i=0;i<len-k-1;i++){
+        for(int i=0;i<len-k-1;i++)
             cur=cur.next;
-        }
         tail.next=head;
         head=cur.next;
         cur.next=null;
