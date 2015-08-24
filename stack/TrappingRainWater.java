@@ -1,7 +1,7 @@
 public class Solution {
     /*
     time: O(n)
-    space: O(C)
+    space: O(1)
     */
     @method1
     public int trap(int[] height) {
@@ -33,7 +33,7 @@ public class Solution {
 
     /*
     time: O(n)
-    space: O(C)
+    space: O(1)
     */
     @method2
     public int trap(int[] height) {

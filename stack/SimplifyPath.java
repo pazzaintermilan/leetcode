@@ -1,4 +1,8 @@
 public class Solution {
+    /*
+    time: O(n)
+    space: O(n)
+    */
     public String simplifyPath(String path) {
         Stack<String> stk=new Stack<String>();
         int i=0;

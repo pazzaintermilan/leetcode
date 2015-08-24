@@ -1,10 +1,8 @@
 class MinStack {
-
     /*
     time: O(1) 
     space: O(n)
     */
-
     Stack<Integer> stk = new Stack<Integer>();
     Stack<Integer> minStk = new Stack<Integer>();
     
