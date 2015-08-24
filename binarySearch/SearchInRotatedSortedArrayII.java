@@ -1,7 +1,7 @@
 public class Solution {
     /*
-    time: log(n)
-    space: C
+    time: O(logn)
+    space: O(1)
     */
     public boolean search(int[] nums, int target) {
         if(nums==null||nums.length==0)

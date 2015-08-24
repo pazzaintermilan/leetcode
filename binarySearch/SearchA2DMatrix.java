@@ -1,7 +1,7 @@
 public class Solution {
     /*
-    time: log(n)
-    space: C
+    time: O(logn)
+    space: O(1)
     */
     public boolean searchMatrix(int[][] matrix, int target) {
         if(matrix==null||matrix.length==0)

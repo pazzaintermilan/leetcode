@@ -1,7 +1,7 @@
 public class Solution {
     /*
-    time: log(n)
-    space: C
+    time: O(logn)
+    space: O(1)
     */
     public int findMin(int[] nums) {
         if(nums==null||nums.length==0)

@@ -1,6 +1,6 @@
 public class Solution {
     /*
-    time: O(log n)
+    time: O(logn)
     space: O(1)
     */
     public int search(int[] nums, int target) {

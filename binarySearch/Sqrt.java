@@ -1,9 +1,9 @@
 public class Solution {
-    @method1
     /*
-    time: log(n)
-    space: C
+    time: O(logn)
+    space: O(1)
     */
+    @method1
     public int mySqrt(int x) {
         if(x<2)
             return x;
@@ -21,11 +21,11 @@ public class Solution {
         return preLeft;
     }
 
-    @method2
     /*
-    time: log(n)
-    space: C
+    time: O(logn)
+    space: O(1)
     */
+    @method2
     public int mySqrt(int x) {
         if(x<2)
             return x;

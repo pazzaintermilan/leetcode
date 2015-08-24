@@ -1,7 +1,7 @@
 public class Solution {
     /*
-    time: log(n)
-    space: C
+    time: O(logn)
+    space: O(1)
     */
     public double myPow(double x, int n) {
         if(x==0)

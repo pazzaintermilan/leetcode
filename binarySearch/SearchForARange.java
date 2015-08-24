@@ -1,9 +1,9 @@
 public class Solution {
-    @method1
     /*
-    time: log(n)
-    space: log(n)
+    time: O(logn)
+    space: O(logn)
     */
+    @method1
     public int[] searchRange(int[] nums, int target) {
         int[] ret=new int[2];
         ret[0]=findLeftPos(nums,0,nums.length-1,target,true);
@@ -24,12 +24,11 @@ public class Solution {
             return findLeftPos(nums,mid+1,right,target,isLeft);
     }
 
-
-    @method2
     /*
-    time: log(n)
-    space: C
+    time: O(logn)
+    space: O(1)
     */
+    @method2
     public int[] searchRange(int[] nums, int target) {
         int[] ret = {-1, -1};
         // the first binary search to find the left boundary
