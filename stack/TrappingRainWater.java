@@ -1,7 +1,11 @@
 public class Solution {
     /*
     time: O(n)
+<<<<<<< HEAD
     space: O(1)
+=======
+    space: O(C)
+>>>>>>> feature
     */
     @method1
     public int trap(int[] height) {
@@ -33,7 +37,11 @@ public class Solution {
 
     /*
     time: O(n)
+<<<<<<< HEAD
     space: O(1)
+=======
+    space: O(C)
+>>>>>>> feature
     */
     @method2
     public int trap(int[] height) {

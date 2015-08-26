@@ -1,7 +1,11 @@
 public class Solution {
     /*
     time: O(n)
+<<<<<<< HEAD
     space: O(1)
+=======
+    space: O(n)
+>>>>>>> feature
     */
     public boolean search(int[] nums, int target) {
         if(nums==null||nums.length==0)

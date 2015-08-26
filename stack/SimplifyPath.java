@@ -1,8 +1,11 @@
 public class Solution {
+<<<<<<< HEAD
     /*
     time: O(n)
     space: O(n)
     */
+=======
+>>>>>>> feature
     public String simplifyPath(String path) {
         Stack<String> stk=new Stack<String>();
         int i=0;

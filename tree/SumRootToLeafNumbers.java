@@ -35,7 +35,11 @@ public class Solution {
     /*
     non-recursive
     time: O(n)
+<<<<<<< HEAD
     space: O(logn)
+=======
+    space: O(n)
+>>>>>>> feature
     */
     @method2
     public int sumNumbers(TreeNode root) {

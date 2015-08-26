@@ -1,8 +1,11 @@
 public class Solution {
+<<<<<<< HEAD
     /*
     time: O(n)
     space: O(logn)
     */
+=======
+>>>>>>> feature
     public int evalRPN(String[] tokens) {
         Stack<Integer> stk=new Stack<Integer>();
         HashSet<String> set=new HashSet<String>(Arrays.asList("+", "-", "*", "/"));

@@ -10,7 +10,11 @@
 public class Solution {
     /*
     time: O(n)
+<<<<<<< HEAD
     space: O(logn)
+=======
+    space: height of tree 
+>>>>>>> feature
     */
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         List<List<Integer>> ret=new ArrayList<List<Integer>>();

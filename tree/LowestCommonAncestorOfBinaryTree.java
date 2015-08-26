@@ -10,7 +10,11 @@
 public class Solution {
     /*
     time: O(n)
+<<<<<<< HEAD
     space: space(logn)
+=======
+    space: O(logn)
+>>>>>>> feature
     */
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root==null||root==p||root==q)

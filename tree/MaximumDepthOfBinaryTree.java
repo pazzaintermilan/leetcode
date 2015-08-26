@@ -28,7 +28,7 @@ public class Solution {
     /*
     non-recursive
     time: O(n)
-    space: O(logn)
+    space: O(n)
     */
     @method2
     public int maxDepth(TreeNode root) {

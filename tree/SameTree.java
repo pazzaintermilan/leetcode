@@ -11,7 +11,7 @@ public class Solution {
     /*
     non-recursive 
     time: O(n)
-    space: O(log n)
+    space: O(n)
     */
     @method1
     public boolean isSameTree(TreeNode p, TreeNode q) {
