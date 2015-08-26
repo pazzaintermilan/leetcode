@@ -1,9 +1,12 @@
 public class Solution {
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
     time: O(n)
     space: O(n)
     */
+=======
+>>>>>>> feature
 =======
 >>>>>>> feature
     public String simplifyPath(String path) {

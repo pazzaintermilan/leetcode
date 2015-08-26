@@ -1,9 +1,12 @@
 public class Solution {
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
     time: O(n)
     space: O(logn)
     */
+=======
+>>>>>>> feature
 =======
 >>>>>>> feature
     public int evalRPN(String[] tokens) {

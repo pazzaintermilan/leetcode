@@ -2,7 +2,11 @@ public class Solution {
     /*
     time: O(n)
 <<<<<<< HEAD
+<<<<<<< HEAD
     space: O(1)
+=======
+    space: O(C)
+>>>>>>> feature
 =======
     space: O(C)
 >>>>>>> feature
@@ -38,7 +42,11 @@ public class Solution {
     /*
     time: O(n)
 <<<<<<< HEAD
+<<<<<<< HEAD
     space: O(1)
+=======
+    space: O(C)
+>>>>>>> feature
 =======
     space: O(C)
 >>>>>>> feature

@@ -10,8 +10,13 @@
 public class Solution {
     /*
 <<<<<<< HEAD
+<<<<<<< HEAD
     time: O(nlogn)
     space: O(logn) 
+=======
+    time: O(n)
+    space: O(logn) or height of tree
+>>>>>>> feature
 =======
     time: O(n)
     space: O(logn) or height of tree
