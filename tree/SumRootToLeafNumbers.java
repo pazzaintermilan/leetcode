@@ -37,7 +37,11 @@ public class Solution {
     time: O(n)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     space: O(logn)
+=======
+    space: O(n)
+>>>>>>> feature
 =======
     space: O(n)
 >>>>>>> feature

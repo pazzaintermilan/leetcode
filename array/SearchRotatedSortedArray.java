@@ -1,10 +1,13 @@
 public class Solution {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
     time: O(logn)
     space: O(1)
     */
+=======
+>>>>>>> feature
 =======
 >>>>>>> feature
 =======
