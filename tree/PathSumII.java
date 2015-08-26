@@ -13,7 +13,11 @@ public class Solution {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     space: O(logn)
+=======
+    space: height of tree 
+>>>>>>> feature
 =======
     space: height of tree 
 >>>>>>> feature
