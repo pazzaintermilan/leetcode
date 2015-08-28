@@ -1,4 +1,8 @@
 public class Solution {
+    /*
+    time: O(n^2)
+    space: O(n)
+    */
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> ret=new ArrayList<List<Integer>>();
         for(int i=0;i<numRows;i++){

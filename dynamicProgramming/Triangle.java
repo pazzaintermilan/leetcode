@@ -1,4 +1,9 @@
 public class Solution {
+    /*
+    time: O(n^2)
+    space: O(n)
+    */
+    @method1
     public int minimumTotal(List<List<Integer>> triangle) {
         if(triangle==null||triangle.size()==0)
             return 0;
@@ -19,5 +24,18 @@ public class Solution {
         for(int i=1;i<maxLength;i++)
             min=Math.min(min,path[i]);
         return min;
+    }
+
+    /*
+    time: O(n^2)
+    space: O(1)
+    */
+    @method2
+    public int minimumTotal(List<List<Integer>> triangle) {
+        for(int i=triangle.size()-2;i>=0;i--)
+            for(int j=0;j<=i;j++)
+                triangle.get(i).set(j,triangle.get(i).get(j)
+                    +Math.min(triangle.get(i+1).get(j),triangle.get(i+1).get(j+1)));
+        return triangle.get(0).get(0);
     }
 }
