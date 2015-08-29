@@ -5,7 +5,7 @@ public class Solution {
         int row=matrix.length;
         int col=matrix[0].length;
         int x=0,y=col-1;
-        while(x>=0&&x<row&&y>=0&&y<col){
+        while(x<row&&y>=0){
             if(matrix[x][y]==target)
                 return true;
             else if(matrix[x][y]<target)
