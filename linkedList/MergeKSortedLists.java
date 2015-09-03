@@ -7,11 +7,11 @@
  * }
  */
 public class Solution {
-    @method1
     /*
     time: nlogK
     space: logK
     */
+    @method1
     public ListNode mergeKLists(ListNode[] lists) {
         if(lists.length==0)
             return null;
@@ -41,11 +41,11 @@ public class Solution {
     }
 
 
-    @method2
     /*
     time: nlogK
-    space: n
+    space: K
     */
+    @method2
     public ListNode mergeKLists(ArrayList<ListNode> lists) {
         if(lists==null||lists.size()==0)
             return null;

@@ -1,4 +1,8 @@
 public class Solution {
+    /*
+    time: O(n)
+    space: O(1)
+    */
     public int maxArea(int[] height) {
         int sum=0;
         int left=0,right=height.length-1;

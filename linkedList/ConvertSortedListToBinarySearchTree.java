@@ -18,7 +18,7 @@
 public class Solution {
     /*
     top-down
-    time: O(n^2)
+    time: O(nlogn)
     space: O(logn)
     */
     @method1
@@ -43,7 +43,7 @@ public class Solution {
     }
 
     /*
-    bottom up
+    bottom up. Implemented in C++ because Java doesn't have pointer and it's copied by value
     time: O(n)
     space: O(logn)
     */

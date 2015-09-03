@@ -1,7 +1,7 @@
 public class Solution {
     /*
     time: O(n^2)
-    space: O(1)  ??
+    space: O(1) 
     */
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> ret=new ArrayList<List<Integer>>();
