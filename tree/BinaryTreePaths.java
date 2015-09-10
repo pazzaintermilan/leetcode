@@ -51,9 +51,38 @@ public class Solution {
     */
     @method2
     public List<String> binaryTreePaths(TreeNode root) {
+        List<String> ret=new ArrayList<String>();
+        List<Integer> list=new ArrayList<Integer>();
+        dfs(root,ret,list);
+        return ret;
+    }
+    
+    private void dfs(TreeNode root, List<String> ret, List<Integer> list){
         if(root==null)
-            return new ArrayList<>();
-        List<String> returnList = new ArrayList<>();
+            return;
+        list.add(root.val);
+        if(root.left==null&&root.right==null){
+            StringBuilder sb=new StringBuilder();
+            for(int i=0;i<list.size()-1;i++)
+                sb.append(list.get(i)+"->");
+            sb.append(list.get(list.size()-1));
+            ret.add(String.valueOf(sb));
+        }
+        dfs(root.left,ret,list);
+        dfs(root.right,ret,list);
+        list.remove(list.size()-1);
+    }
+
+    /*
+    recursive
+    time: O(n)
+    space: height of tree
+    */
+    @method3
+    public List<String> binaryTreePaths(TreeNode root) {
+        if(root==null)
+            return new ArrayList<String>();
+        List<String> returnList = new ArrayList<String>();
         getBinaryTreePaths(returnList,root,"");
         return returnList;
     }
@@ -73,8 +102,8 @@ public class Solution {
     time: O(n)
     space: O(n)
     */
-    @method3
-    public void binaryTreePaths(TreeNode root){
+    @method4
+    public List<String> binaryTreePaths(TreeNode root){
         Queue<TreeNode> queue=new LinkedList<TreeNode>();
         Queue<String> strs=new LinkedList<String>();
         List<String> ret=new ArrayList<String>();

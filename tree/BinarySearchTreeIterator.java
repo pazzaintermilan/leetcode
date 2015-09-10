@@ -28,7 +28,7 @@ public class BSTIterator {
     /** @return the next smallest number */
     public int next() {
         int ret=0;
-        if(!stk.isEmpty()){
+        if(hasNext()){
             TreeNode node=stk.pop();
             ret=node.val;
             node=node.right;

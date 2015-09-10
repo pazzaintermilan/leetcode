@@ -47,7 +47,8 @@ public class Solution {
         while(!stack.isEmpty()){
             TreeNode ptr=stack.pop();
             c++;
-            if(c==k)return ptr.val;
+            if(c==k)
+                return ptr.val;
             TreeNode rt=ptr.right;
             while(rt!=null){
                 stack.push(rt);
@@ -55,5 +56,32 @@ public class Solution {
             }
         }
         return 0;
+    }
+
+
+    /*
+    iterative, inorder traverse
+    time: O(k)
+    space: O(k)
+    */
+    @method3
+    public int kthSmallest(TreeNode root, int k) {
+        if(root==null)
+            return 0;
+        Stack<TreeNode> stk=new Stack<TreeNode>();
+        ArrayList<Integer> ret=new ArrayList<Integer>();
+        while(root!=null||!stk.isEmpty()){
+            if(root!=null){
+                stk.push(root);
+                root=root.left;
+            }else{
+                root=stk.pop();
+                ret.add(root.val);
+                if(ret.size()>=k)
+                    break;
+                root=root.right;
+            }
+        }
+        return ret.get(k-1);
     }
 }

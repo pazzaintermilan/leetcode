@@ -33,9 +33,45 @@ public class Solution {
     }
 
     /*
+    time: O(logn)
+    space: height of tree
+    */
+    @method2
+    public int countNodes(TreeNode root) {
+        if(root==null) 
+            return 0;
+        int leftDepth=leftDepth(root);
+        int rightDepth=rightDepth(root);
+        if(leftDepth==rightDepth)
+            return (1<<leftDepth)-1;
+        else
+            return 1+countNodes(root.left)+countNodes(root.right);
+    }
+    
+    private int leftDepth(TreeNode root){
+        int count=0;
+        while(root!=null){
+            count++;
+            root=root.left;
+        }
+        return count;
+    }
+    
+    private int rightDepth(TreeNode root){
+        int count=0;
+        while(root!=null){
+            count++;
+            root=root.right;
+        }
+        return count;
+    }
+
+
+    /*
     time：O(logn)
     space: O(1)
     */
+    @method3
     public int countNodes(TreeNode root) {
         if(root==null)
             return 0;
