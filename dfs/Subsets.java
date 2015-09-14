@@ -22,4 +22,24 @@ public class Solution {
         subset(ret,tmp,num,pos+1);
         tmp.remove(tmp.size()-1);
     }
+
+    /*
+    iterative
+    */
+    public List<List<Integer>> subsets(int[] S) {
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        res.add(new ArrayList<Integer>());
+        if(S == null || S.length == 0)
+            return res;
+        Arrays.sort(S);
+        for(int i=0;i<S.length;i++){
+            int size = res.size();
+            for(int j=0;j<size;j++){
+                ArrayList<Integer> tmp = new ArrayList<Integer>(res.get(j));
+                tmp.add(S[i]);
+                res.add(tmp);
+            }
+        }
+        return res;
+    }
 }

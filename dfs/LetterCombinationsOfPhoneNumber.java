@@ -1,4 +1,8 @@
 public class Solution {
+    /*
+    time: O(3^n)
+    space: O(n)
+    */
     public List<String> letterCombinations(String digits) {
         String[] dic={"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
         List<String> ret=new ArrayList<String>();

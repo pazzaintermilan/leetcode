@@ -1,7 +1,7 @@
 public class Solution {
     /*
-    time:
-    space:
+    time: O(2^n)
+    space: stack:O(n)+O(2^n)
     */
     public List<List<Integer>> subsetsWithDup(int[] num) {
         List<List<Integer>> ret=new ArrayList<List<Integer>>();
